@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-//Inserção de Dados da Carta 1:
+    //Inserção de Dados da Carta 1:
     
     printf("Carta 1:\n");
-    char codigo[3];
+    char codigo[4];  
     char cidade[20];
     int populacao;
     float area;
@@ -29,7 +29,7 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &num_pontos_turisticos);
 
-//Inserção de dados da Carta 2:
+    //Inserção de dados da Carta 2:
 
     printf("Carta 2:\n");
 
@@ -37,7 +37,7 @@ int main() {
     scanf("%s", codigo);
 
     printf("Digite o nome da cidade: ");
-    scanf(" %d[^\n]", cidade);
+    scanf(" %[^\n]", cidade); 
 
     printf("Digite a população: ");
     scanf("%d", &populacao);
@@ -52,3 +52,4 @@ int main() {
     scanf("%d", &num_pontos_turisticos);
 
     return 0;
+}
