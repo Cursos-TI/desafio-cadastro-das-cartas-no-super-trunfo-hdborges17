@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    //Inserção de Dados da Carta 1:
+//Inserção de Dados da Carta 1:
     
     printf("Carta 1:\n");
-    char codigo[4];  
+    char codigo[3];
     char cidade[20];
     int populacao;
     float area;
@@ -29,7 +29,17 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &num_pontos_turisticos);
 
-    //Inserção de dados da Carta 2:
+    //Dados da Carta 1:
+
+    printf("\nDados inseridos Carta 1:\n");
+    printf("Código: %s\n", codigo);
+    printf("Cidade: %s\n", cidade);
+    printf("População: %d habitantes\n", populacao);
+    printf("Área: %.2f km²\n", area);
+    printf("PIB: %.2f bilhões\n", PIB);
+    printf("Número de pontos turísticos: %d\n", num_pontos_turisticos);
+
+//Inserção de dados da Carta 2:
 
     printf("Carta 2:\n");
 
@@ -37,9 +47,9 @@ int main() {
     scanf("%s", codigo);
 
     printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]", cidade); 
+    scanf(" %[^\n]", cidade);
 
-    printf("Digite a população: ");
+    printf("Digite a população: ");
     scanf("%d", &populacao);
 
     printf("Digite a área (em km²): ");
@@ -51,5 +61,15 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &num_pontos_turisticos);
 
-    return 0;
+    //Dados da Carta 2:
+
+    printf("\nDados inseridos Carta 2:\n");
+    printf("Código: %s\n", codigo);
+    printf("Cidade: %s\n", cidade);
+    printf("População: %d habitantes\n", populacao);
+    printf("Área: %.2f km²\n", area);
+    printf("PIB: %.2f bilhões\n", PIB);
+    printf("Número de pontos turísticos: %d\n", num_pontos_turisticos);
+
+    return.0;
 }
